@@ -6,7 +6,6 @@ export default function(){
         <div>
             <NavBar/>
 
-
             <h1>Contact</h1>
         </div>
     );
