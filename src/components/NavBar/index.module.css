@@ -12,10 +12,17 @@
     height: 50%;
 }
 
+.settings{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: white;
+}
+
 
 .buttonNav {
     font-size: 18px;
-    color: #e1e1e1;
+    color: var(--verde);
     font-family: inherit;
     font-weight: 800;
     cursor: pointer;
@@ -29,7 +36,7 @@
 }
 .buttonNav:focus,
 .buttonNav:hover {
-    color: #fff;
+    color: var(--gris);
 }
 .buttonNav:focus:after,
 .buttonNav:hover:after {
@@ -44,7 +51,7 @@
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #fff;
+    background-color: var(--verde);
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;

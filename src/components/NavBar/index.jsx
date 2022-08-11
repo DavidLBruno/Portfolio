@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./index.module.css";
+import { RiSettingsFill } from "react-icons/ri";
 
 export default function () {
   return (
     <div className={styles.bodyNav}>
+      <RiSettingsFill className={styles.settings} />
       <div className={styles.bodyButtons}>
         <Link
           className={styles.buttonNav}

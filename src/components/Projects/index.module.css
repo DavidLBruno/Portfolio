@@ -1,0 +1,24 @@
+
+
+.bodyProjects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 35rem;
+    width: 100%;
+}
+
+
+.repo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 1rem;
+    background-color: var(--negro);
+    border: 1px solid var(--verde);
+    box-shadow: 0 0 1rem var(--verde);
+}

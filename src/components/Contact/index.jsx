@@ -1,9 +1,9 @@
 import React from "react";
-import NavBar from "../NavBar";
+import styles from "./index.module.css";
 
 export default function () {
   return (
-    <div>
+    <div className={styles.bodyContact}>
       <h1>Contact</h1>
     </div>
   );
