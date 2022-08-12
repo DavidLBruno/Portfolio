@@ -1,9 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./index.module.css";
 import { RiSettingsFill } from "react-icons/ri";
 
 export default function () {
+  const location = useLocation();
+  const ubicacion = location.pathname.replace("/", "");
+  console.log(ubicacion);
   return (
     <div className={styles.bodyNav}>
       <RiSettingsFill className={styles.settings} />

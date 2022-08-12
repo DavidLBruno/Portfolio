@@ -1,5 +1,9 @@
 import React from "react";
 import styles from "./index.module.css";
+import { DiJavascript1 } from "react-icons/di";
+import { GrNode } from "react-icons/gr";
+import ButtonTecno from "../Buttons/buttonTecno";
+
 export default function () {
   return (
     <div className={styles.bodyAbout}>
@@ -14,14 +18,9 @@ export default function () {
       </div>
 
       <div className={styles.tecnologias}>
-        <ul class="wrapper">
-          <li class="icon facebook">
-            <span class="tooltip">Facebook</span>
-            <span>
-              <i className={styles.fabFa - facebook - f}></i>
-            </span>
-          </li>
-        </ul>
+        <h1>tecnologias</h1>
+        <ButtonTecno name={"JavaScript"} icon={<DiJavascript1 />} />
+        <ButtonTecno name={"Node.Js"} icon={<GrNode />} />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonBuble from "../ButtonBuble";
+import ButtonBuble from "../Buttons/ButtonBuble";
 import styles from "./index.module.css";
 
 export default function () {

@@ -1,5 +1,6 @@
 .bodyAbout{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 30rem;
@@ -17,4 +18,8 @@
 }
 .aboutMe span{
     color: var(--blanco);
+}
+
+.tecnologias{
+    display: flex;
 }
