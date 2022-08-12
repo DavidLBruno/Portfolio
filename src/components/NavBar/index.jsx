@@ -13,7 +13,7 @@ export default function () {
           to={"/"}
           style={{ textDecoration: "none" }}
         >
-          Home
+          Inicio
         </Link>
         <Link
           className={styles.buttonNav}

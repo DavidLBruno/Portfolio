@@ -1,3 +1,20 @@
 .bodyAbout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 30rem;
+}
+
+.aboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--negro);
+    width: 20rem;
+    height: 15rem;
+    border-radius: 1rem;
+    border: 0.1rem solid var(--verde);
+}
+.aboutMe span{
+    color: var(--blanco);
 }

@@ -5,6 +5,7 @@
 --verde: #01C38D;
 --gris: #696E79;
 --blanco:#FFFFFF;
+--fuente: font-family: 'Kanit', sans-serif;
 }
 
 
@@ -21,7 +22,7 @@ body::-webkit-scrollbar{
 
 body::-webkit-scrollbar-thumb{
   background-color: black;
-  border-radius: 0.1rem;
+  border-radius: 0.3rem;
 }
 
 code {

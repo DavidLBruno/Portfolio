@@ -16,7 +16,12 @@
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
-    color: white;
+    color: var(--blanco);
+    cursor: pointer;
+}
+.settings:focus{
+    transition: 0.5s;
+    transform: rotate(45deg);
 }
 
 

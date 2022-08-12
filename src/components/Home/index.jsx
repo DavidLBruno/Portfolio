@@ -1,12 +1,6 @@
 import React from "react";
-import Footer from "../Footer";
-import Info from "../Info";
-import NavBar from "../NavBar";
+import styles from "./index.module.css";
 
 export default function () {
-  return (
-    <div>
-      <Info />
-    </div>
-  );
+  return <div className={styles.bodyHome}></div>;
 }
