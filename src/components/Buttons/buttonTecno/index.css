@@ -2,10 +2,16 @@
     display: inline-flex;
     list-style: none;
   }
+
+  .icono{
+    font-size: xx-large;
+    padding-top: 9px;
+  }
   
   .wrapper .icon {
     position: relative;
     background: #ffffff;
+    color: var(--negro);
     border-radius: 50%;
     padding: 15px;
     margin: 10px;
@@ -14,8 +20,8 @@
     font-size: 18px;
     display: flex;
     justify-content: center;
+    align-content: center;
     align-items: center;
-    flex-direction: column;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -65,31 +71,95 @@
     background: yellow;
     color: black;
   }
+
+  .wrapper .TypeScript:hover,
+  .wrapper .TypeScript:hover .tooltip,
+  .wrapper .TypeScript:hover .tooltip::before {
+    background: #017acd;
+    color: black;
+  }
   
   .wrapper .NodeJs:hover,
   .wrapper .NodeJs:hover .tooltip,
   .wrapper .NodeJs:hover .tooltip::before {
-    background: var(--verde);
-    color: #ffffff;
+    background: #7dcf3c;
+    color: black;
   }
   
-  .wrapper .instagram:hover,
-  .wrapper .instagram:hover .tooltip,
-  .wrapper .instagram:hover .tooltip::before {
-    background: #E4405F;
-    color: #ffffff;
+  .wrapper .ReactJs:hover,
+  .wrapper .ReactJs:hover .tooltip,
+  .wrapper .ReactJs:hover .tooltip::before {
+    background: #63d9f9;
+    color: black;
+  }
+
+  .wrapper .Redux:hover,
+  .wrapper .Redux:hover .tooltip,
+  .wrapper .Redux:hover .tooltip::before {
+    background: #7748bb;
+    color: black;
   }
   
-  .wrapper .github:hover,
-  .wrapper .github:hover .tooltip,
-  .wrapper .github:hover .tooltip::before {
-    background: #333333;
-    color: #ffffff;
+  .wrapper .PostgreSQL:hover,
+  .wrapper .PostgreSQL:hover .tooltip,
+  .wrapper .PostgreSQL:hover .tooltip::before {
+    background: #316192;
+    color: black;
+
   }
   
-  .wrapper .youtube:hover,
-  .wrapper .youtube:hover .tooltip,
-  .wrapper .youtube:hover .tooltip::before {
-    background: #CD201F;
+  .wrapper .ExpressJs:hover,
+  .wrapper .ExpressJs:hover .tooltip,
+  .wrapper .ExpressJs:hover .tooltip::before {
+    background: black;
     color: #ffffff;
+  }
+
+  .wrapper .Sequelize:hover,
+  .wrapper .Sequelize:hover .tooltip,
+  .wrapper .Sequelize:hover .tooltip::before {
+    background: #2596be;
+    color: black;
+  }
+
+  .wrapper .CSS:hover,
+  .wrapper .CSS:hover .tooltip,
+  .wrapper .CSS:hover .tooltip::before {
+    background: #274ce4;
+    color: black;
+  }
+
+  .wrapper .GitHub:hover,
+  .wrapper .GitHub:hover .tooltip,
+  .wrapper .GitHub:hover .tooltip::before {
+    background: black;
+    color: white;
+  }
+
+  .wrapper .Heroku:hover,
+  .wrapper .Heroku:hover .tooltip,
+  .wrapper .Heroku:hover .tooltip::before {
+    background: #3f347c;
+    color: white;
+  }
+
+  .wrapper .Heroku:hover,
+  .wrapper .Heroku:hover .tooltip,
+  .wrapper .Heroku:hover .tooltip::before {
+    background: #3f347c;
+    color: white;
+  }
+
+  .wrapper .Vercel:hover,
+  .wrapper .Vercel:hover .tooltip,
+  .wrapper .Vercel:hover .tooltip::before {
+    background: black;
+    color: white;
+  }
+
+  .wrapper .Postman:hover,
+  .wrapper .Postman:hover .tooltip,
+  .wrapper .Postman:hover .tooltip::before {
+    background: #ff6c38;
+    color: black;
   }
