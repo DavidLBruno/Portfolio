@@ -19,14 +19,25 @@ import ButtonTecno from "../Buttons/buttonTecno";
 export default function () {
   return (
     <div className={styles.bodyAbout}>
-      <div className={styles.aboutMe}>
-        <span>
-          Soy un apasionado desarrollador web Full Stack orientado en ambos
-          lados de desarrollo. Me caracterizo por tener una muy buena
-          versatilidad en el back y front como también una gran ambición por
-          resolver problemas. Tengo un excelente trabajo en equipo como también
-          una gran ambición por crecer en el ámbito profesional IT.
-        </span>
+      <div className={styles.about}>
+        <div className={styles.aboutMe}>
+          <span>
+            Soy un apasionado desarrollador web Full Stack orientado en ambos
+            lados de desarrollo. Me caracterizo por tener una muy buena
+            versatilidad en el back y front como también una gran ambición por
+            resolver problemas. Tengo un excelente trabajo en equipo como
+            también una gran ambición por crecer en el ámbito profesional IT.
+          </span>
+        </div>
+        <div className={styles.aboutMe}>
+          <span>
+            Soy un apasionado desarrollador web Full Stack orientado en ambos
+            lados de desarrollo. Me caracterizo por tener una muy buena
+            versatilidad en el back y front como también una gran ambición por
+            resolver problemas. Tengo un excelente trabajo en equipo como
+            también una gran ambición por crecer en el ámbito profesional IT.
+          </span>
+        </div>
       </div>
 
       <h1>Tecnologias</h1>
@@ -38,7 +49,12 @@ export default function () {
           <ButtonTecno name={"JavaScript"} icon={<DiJavascript1 />} />
         </a>
         <a href="https://www.typescriptlang.org/" target="_blank">
-          <ButtonTecno name={"TypeScript"} icon={<SiTypescript />} />
+          <ButtonTecno
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            name={"TypeScript"}
+            icon={<SiTypescript />}
+          />
         </a>
         <a href="https://nodejs.org" target="_blank">
           <ButtonTecno name={"Node.Js"} icon={<GrNode />} />
@@ -71,7 +87,7 @@ export default function () {
           <ButtonTecno name={"Vercel"} icon={<SiVercel />} />
         </a>
         <a
-          href="https://www.postman.com/product/what-is-postman/"
+          href="https://www.postman.com/product/what-is-postman"
           target="_blank"
         >
           <ButtonTecno name={"Postman"} icon={<SiPostman />} />
