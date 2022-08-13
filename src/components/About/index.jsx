@@ -13,6 +13,7 @@ import {
   SiHeroku,
   SiVercel,
   SiPostman,
+  SiSass,
 } from "react-icons/si";
 import ButtonTecno from "../Buttons/buttonTecno";
 
@@ -21,6 +22,7 @@ export default function () {
     <div className={styles.bodyAbout}>
       <div className={styles.about}>
         <div className={styles.aboutMe}>
+          <h1>Quien soy?</h1>
           <span>
             Soy un apasionado desarrollador web Full Stack orientado en ambos
             lados de desarrollo. Me caracterizo por tener una muy buena
@@ -30,12 +32,12 @@ export default function () {
           </span>
         </div>
         <div className={styles.aboutMe}>
+          <h1>Estudios</h1>
           <span>
-            Soy un apasionado desarrollador web Full Stack orientado en ambos
-            lados de desarrollo. Me caracterizo por tener una muy buena
-            versatilidad en el back y front como también una gran ambición por
-            resolver problemas. Tengo un excelente trabajo en equipo como
-            también una gran ambición por crecer en el ámbito profesional IT.
+            Estudie en el Bootcamp de Henry donde obtuve el certificado de
+            desarrollador web Full Stack. Fueron 800 horas de practica y teoria
+            donde pude desarrollar mis conocimientos y experiencias. Tambien
+            realice proyectos simulando el ambiente laboral.
           </span>
         </div>
       </div>
@@ -76,6 +78,9 @@ export default function () {
         </a>
         <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
           <ButtonTecno name={"CSS"} icon={<SiCss3 />} />
+        </a>
+        <a href="https://sass-lang.com/" target="_blank">
+          <ButtonTecno name={"Sass"} icon={<SiSass />} />
         </a>
         <a href="https://github.com/about" target="_blank">
           <ButtonTecno name={"GitHub"} icon={<SiGithub />} />

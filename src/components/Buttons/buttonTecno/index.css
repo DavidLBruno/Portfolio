@@ -131,6 +131,13 @@
     color: black;
   }
 
+  .wrapper .Sass:hover,
+  .wrapper .Sass:hover .tooltip,
+  .wrapper .Sass:hover .tooltip::before {
+    background: #c76494;
+    color: white;
+  }
+
   .wrapper .GitHub:hover,
   .wrapper .GitHub:hover .tooltip,
   .wrapper .GitHub:hover .tooltip::before {

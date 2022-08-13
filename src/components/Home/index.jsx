@@ -5,7 +5,9 @@ export default function () {
   return (
     <div className={styles.bodyHome}>
       <div>
-        <h1>Hi</h1>
+        <h1 className={styles.tituloIntro}>
+          Hola! Bienvenid@! Me llamo Bruno David.
+        </h1>
       </div>
     </div>
   );

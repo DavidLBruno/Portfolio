@@ -1,17 +1,14 @@
 .bodyProjects{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    align-items: flex-start;
     justify-content: space-around;
     min-height: 35rem;
     width: 100%;
 }
-@media (max-width: 600px){
-    .bodyProjects{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
+
 
 .buttonOrder{
     display: flex;
@@ -30,21 +27,37 @@
     width: 25.5rem;
     border-radius: 1rem;
     background-color: var(--negro);
-    box-shadow: 0 0 0.5rem var(--verde);
     transition: 0.5s;
+    box-shadow: 0 0 0.5rem var(--verde);
 }
 .videoH1{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.texto{
+    overflow: hidden;
+    color: var(--blanco);
+    transition: 0.5s;
+    opacity: 0;
+    width: 90%;
+
+}
 .repo h1{
     color: var(--blanco);
 }
 .repo:hover{
     transition: 0.5s;
-    height: 30rem;
+    height: 47rem;
 }
+.repo:hover .texto{
+    transition: 1s;
+    color: var(--blanco);
+    opacity: 1;
+    width: 90%;
+}
+
+
 
 .bn30 {
     border: 5rem;

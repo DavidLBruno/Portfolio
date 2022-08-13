@@ -14,18 +14,18 @@
 
 .aboutMe{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
     padding: 1rem 1rem 1rem 1rem;
     background-color: var(--negro);
     width: 20rem;
-    height: 15rem;
+    height: 16rem;
     border-radius: 1rem;
     border: 0.1rem solid var(--verde);
-}
-.aboutMe span{
     color: var(--blanco);
 }
+
 
 .tecnologias{
     display: grid;

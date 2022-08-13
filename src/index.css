@@ -13,6 +13,9 @@ html{
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0;
   font-family: 'Kanit', sans-serif;
   background: var(--azul);
