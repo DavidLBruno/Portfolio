@@ -60,3 +60,21 @@
     transition-duration: 400ms;
     transition-property: width, left;
 }
+
+.volverArriba{
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.volverArriba:hover{
+    filter: drop-shadow(0 0 1rem var(--verde));
+    transition: 0.5s;
+}
+
+.aparecer{
+    display: none;
+}

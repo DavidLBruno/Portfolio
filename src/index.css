@@ -8,7 +8,9 @@
 --fuente: font-family: 'Kanit', sans-serif;
 }
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -18,6 +20,7 @@ body {
 
 body::-webkit-scrollbar{
   width: 0.5rem;
+  background-color: var(--gris);
 }
 
 body::-webkit-scrollbar-thumb{

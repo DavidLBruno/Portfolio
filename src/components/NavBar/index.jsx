@@ -1,12 +1,18 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./index.module.css";
 import { RiSettingsFill } from "react-icons/ri";
+import { IoArrowUpCircleSharp } from "react-icons/io5";
 
 export default function () {
-  const location = useLocation();
-  const ubicacion = location.pathname.replace("/", "");
-  console.log(ubicacion);
+  const [flecha, setFlecha] = useState(false);
+  const volverArriba = () => {
+    window.scrollTo(0, 0);
+  };
+  window.onscroll = () => {
+    console.log(window.scrollY);
+    window.scrollY > 80 ? setFlecha(true) : setFlecha(false);
+  };
   return (
     <div className={styles.bodyNav}>
       <RiSettingsFill className={styles.settings} />
@@ -40,6 +46,11 @@ export default function () {
           Contacto
         </Link>
       </div>
+
+      <IoArrowUpCircleSharp
+        className={!flecha ? styles.aparecer : styles.volverArriba}
+        onClick={volverArriba}
+      />
     </div>
   );
 }
