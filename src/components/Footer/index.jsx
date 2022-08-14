@@ -11,15 +11,12 @@ export default function () {
       <div>
         <h3>Redes</h3>
         <div className={styles.orderIcons}>
-          <BsGithub className={styles.icons}>
-            <a href="https://github.com/DavidLBruno" target="_blank"></a>
-          </BsGithub>
-          <BsLinkedin className={styles.icons}>
-            <a
-              href="https://www.linkedin.com/in/bruno-developer"
-              target="_blank"
-            ></a>
-          </BsLinkedin>
+          <a href="https://github.com/DavidLBruno" target="_blank">
+            <BsGithub className={styles.icons} />
+          </a>
+          <a href="https://www.linkedin.com/in/bruno-developer" target="_blank">
+            <BsLinkedin className={styles.icons} />
+          </a>
         </div>
       </div>
     </div>

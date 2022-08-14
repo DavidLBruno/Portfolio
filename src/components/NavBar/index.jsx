@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./index.module.css";
 import { RiSettingsFill } from "react-icons/ri";
 import { IoArrowUpCircleSharp } from "react-icons/io5";
 
 export default function () {
+  const location = useLocation();
+  const ubicacion = location.pathname;
+  console.log(ubicacion);
   const [flecha, setFlecha] = useState(false);
   const volverArriba = () => {
     window.scrollTo(0, 0);
   };
   window.onscroll = () => {
-    console.log(window.scrollY);
     window.scrollY > 80 ? setFlecha(true) : setFlecha(false);
   };
   return (
@@ -18,28 +20,36 @@ export default function () {
       <RiSettingsFill className={styles.settings} />
       <div className={styles.bodyButtons}>
         <Link
-          className={styles.buttonNav}
+          className={
+            ubicacion !== "/" ? styles.buttonNav : styles.buttonClicked
+          }
           to={"/"}
           style={{ textDecoration: "none" }}
         >
           Inicio
         </Link>
         <Link
-          className={styles.buttonNav}
+          className={
+            ubicacion !== "/about" ? styles.buttonNav : styles.buttonClicked
+          }
           to={"/about"}
           style={{ textDecoration: "none" }}
         >
           Sobre mi
         </Link>
         <Link
-          className={styles.buttonNav}
+          className={
+            ubicacion !== "/projects" ? styles.buttonNav : styles.buttonClicked
+          }
           to={"/projects"}
           style={{ textDecoration: "none" }}
         >
           Proyectos
         </Link>
         <Link
-          className={styles.buttonNav}
+          className={
+            ubicacion !== "/contact" ? styles.buttonNav : styles.buttonClicked
+          }
           to={"/contact"}
           style={{ textDecoration: "none" }}
         >
