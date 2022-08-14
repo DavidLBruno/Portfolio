@@ -39,3 +39,19 @@
     height: 0;
     width: 0;
 }
+
+@media (max-width: 600px) {
+    .bodyAbout{
+        align-items: center;
+    }
+    .about{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .tecnologias{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    }
+}

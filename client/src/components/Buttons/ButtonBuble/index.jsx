@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-export default function () {
+export default function ({ title, color, backgroundColor }) {
   return (
     <div>
       <svg class="misvg" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -23,19 +23,52 @@ export default function () {
         </defs>
       </svg>
 
-      <button id="gooey-button">
-        Descargar cv
+      <button
+        id="gooey-button"
+        style={{ color: `${color}`, backgroundColor: `${backgroundColor}` }}
+      >
+        {title}
         <span class="bubbles">
-          <span class="bubble"></span>
-          <span class="bubble"></span>
-          <span class="bubble"></span>
-          <span class="bubble"></span>
-          <span class="bubble"></span>
-          <span class="bubble"></span>
-          <span class="bubble"></span>
-          <span class="bubble"></span>
-          <span class="bubble"></span>
-          <span class="bubble"></span>
+          <span
+            class="bubble"
+            style={{ backgroundColor: `${backgroundColor}` }}
+          ></span>
+          <span
+            class="bubble"
+            style={{ backgroundColor: `${backgroundColor}` }}
+          ></span>
+          <span
+            class="bubble"
+            style={{ backgroundColor: `${backgroundColor}` }}
+          ></span>
+          <span
+            class="bubble"
+            style={{ backgroundColor: `${backgroundColor}` }}
+          ></span>
+          <span
+            class="bubble"
+            style={{ backgroundColor: `${backgroundColor}` }}
+          ></span>
+          <span
+            class="bubble"
+            style={{ backgroundColor: `${backgroundColor}` }}
+          ></span>
+          <span
+            class="bubble"
+            style={{ backgroundColor: `${backgroundColor}` }}
+          ></span>
+          <span
+            class="bubble"
+            style={{ backgroundColor: `${backgroundColor}` }}
+          ></span>
+          <span
+            class="bubble"
+            style={{ backgroundColor: `${backgroundColor}` }}
+          ></span>
+          <span
+            class="bubble"
+            style={{ backgroundColor: `${backgroundColor}` }}
+          ></span>
         </span>
       </button>
     </div>

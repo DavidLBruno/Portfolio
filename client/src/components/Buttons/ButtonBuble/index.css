@@ -9,10 +9,8 @@
   font-size: 2rem;
   font-family: var(--fuente);
   border: none;
-  color: var(--negro);
   filter: url("#gooey");
   position: relative;
-  background-color: var(--verde);
   cursor: pointer;
   }
   #gooey-button:focus {

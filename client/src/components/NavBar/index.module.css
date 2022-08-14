@@ -5,6 +5,12 @@
     height: 5rem;
     background-color: #17202A;
 }
+
+@media (max-width: 600px) {
+    .bodyNav{
+        justify-content: center;
+    }
+}
 .bodyButtons{
     display: flex;
     justify-content: space-around;

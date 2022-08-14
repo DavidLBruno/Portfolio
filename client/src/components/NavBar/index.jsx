@@ -7,7 +7,6 @@ import { IoArrowUpCircleSharp } from "react-icons/io5";
 export default function () {
   const location = useLocation();
   const ubicacion = location.pathname;
-  console.log(ubicacion);
   const [flecha, setFlecha] = useState(false);
   const volverArriba = () => {
     window.scrollTo(0, 0);
