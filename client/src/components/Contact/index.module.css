@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 31rem;
+    height: 100vh;
 }
 
 .formContact{
@@ -33,10 +33,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    min-width: 50%;
+    min-width: 40%;
     min-height: 80vh;
-    border: 1px solid var(--verde);
-    border-radius: 1rem;
+    border: 1px solid var(--negro);
+    border-radius: 0.5rem;
     background-color: var(--azul);
 }
 
@@ -109,7 +109,7 @@
     position: relative;
     padding: 15px 0 0;
     margin-top: 10px;
-    width: 50%;
+    width: 70%;
   }
   
   .formField {
@@ -170,4 +170,7 @@
     color: red;
     right: 0.5rem;
     top: 1.5rem;
+  }
+  .labelInfo{
+    right: 2rem;
   }

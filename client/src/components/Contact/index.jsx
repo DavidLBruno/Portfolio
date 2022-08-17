@@ -5,7 +5,11 @@ import { validate } from "./checkError";
 
 export default function () {
   const [form, setForm] = useState(false);
-  const [error, setError] = useState("");
+  const [error, setError] = useState({
+    name: "",
+    mail: "",
+    subject: "",
+  });
   const [input, setInput] = useState({
     name: "",
     mail: "",
@@ -23,9 +27,12 @@ export default function () {
     });
 
     setError(
-      validate({
-        [event.target.name]: event.target.value,
-      })
+      validate(
+        {
+          [event.target.name]: event.target.value,
+        },
+        error
+      )
     );
   };
 
@@ -76,6 +83,9 @@ export default function () {
                 Nombre
               </label>
               <label className={styles.labelInput}>X</label>
+              <label className={`${styles.labelInput} ${styles.labelInfo}`}>
+                Coloca un Nombre
+              </label>
             </div>
             <div className={`${styles.formGroup} ${styles.field}`}>
               <input
@@ -91,6 +101,9 @@ export default function () {
                 Correo
               </label>
               <label className={styles.labelInput}>X</label>
+              <label className={`${styles.labelInput} ${styles.labelInfo}`}>
+                Coloca un Mail
+              </label>
             </div>
             <div className={`${styles.formGroup} ${styles.field} `}>
               <textarea
@@ -106,6 +119,9 @@ export default function () {
                 Asunto
               </label>
               <label className={styles.labelInput}>X</label>
+              <label className={`${styles.labelInput} ${styles.labelInfo}`}>
+                Coloca un Asunto
+              </label>
             </div>
             <button type="submit" className={styles.button59}>
               Enviar
