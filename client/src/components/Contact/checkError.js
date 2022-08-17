@@ -12,20 +12,23 @@ export const validate = (input, error) => {
         changeError.name = "El nombre no cumple las condiciones";
         return changeError;
       } else {
+        changeError.name = "";
         return changeError;
       }
     case "mail":
       if (!expresiones.mail.test(value)) {
-        changeError.name = "El nombre no cumple las condiciones";
+        changeError.mail = "El Mail no cumple las condiciones";
         return changeError;
       } else {
+        changeError.mail = "";
         return changeError;
       }
     case "subject":
       if (!expresiones.subject.test(value)) {
-        changeError.name = "El nombre no cumple las condiciones";
+        changeError.subject = "El asunto no cumple las condiciones";
         return changeError;
       } else {
+        changeError.subject = "";
         return changeError;
       }
   }

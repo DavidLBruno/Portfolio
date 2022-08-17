@@ -44,58 +44,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     min-width: 100%;
     min-height: 100%;
 }
 
 .textarea{
-    min-height: 50vh;
+    min-height: 40vh;
+    max-height: 40vh;
+    max-width: 60vh;
 }
 
-/* CSS */
 .button59 {
   align-items: center;
-  background-color: #fff;
-  border: 2px solid #000;
-  box-sizing: border-box;
-  color: #000;
+  border: none;
+  background-color: var(--azul);
+  color: var(--gris);
   cursor: pointer;
-  display: inline-flex;
-  fill: #000;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   height: 5vh;
   justify-content: center;
-  letter-spacing: -.8px;
-  line-height: 24px;
-  min-width: 5vh;
-  border-radius: 1rem;
-  outline: 0;
+  border-radius: 0.5rem;
   padding: 0 17px;
   text-align: center;
   text-decoration: none;
-  transition: all .3s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  box-shadow: 10vh var(--verde);
-}
-
-.button59:focus {
-  color: #171e29;
+  transition: all .45s;
 }
 
 .button59:hover {
-  border-color: var(--azul);
-  color: var(--azul);
-  fill: var(--azul);
-}
-
-.button59:active {
-    border-color: var(--azul);
-    color: var(--azul);
-    fill: var(--azul);
+  color: var(--verde);
 }
 
 @media (min-width: 768px) {
@@ -173,4 +151,8 @@
   }
   .labelInfo{
     right: 2rem;
+  }
+
+  .labelOculto{
+    display: none;
   }

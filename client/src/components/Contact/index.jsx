@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import ButtonBuble from "../Buttons/ButtonBuble";
 import styles from "./index.module.css";
+import stylesNavBar from "../NavBar/index.module.css";
 import { validate } from "./checkError";
 
 export default function () {
   const [form, setForm] = useState(false);
   const [error, setError] = useState({
-    name: "",
-    mail: "",
-    subject: "",
+    name: "error",
+    mail: "error",
+    subject: "error",
   });
   const [input, setInput] = useState({
     name: "",
@@ -17,6 +18,11 @@ export default function () {
   });
 
   const handleClick = () => {
+    setInput({
+      name: "",
+      mail: "",
+      subject: "",
+    });
     setForm(!form);
   };
 
@@ -38,10 +44,17 @@ export default function () {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setForm(!form);
-    return console.log(event);
+    if (!error.name && !error.mail && !error.subject) {
+      setInput({
+        name: "",
+        mail: "",
+        subject: "",
+      });
+      setForm(!form);
+      console.log("todoOk");
+    }
   };
-
+  console.log(error);
   return (
     <div className={styles.bodyContact}>
       <a href="https://drive.google.com/uc?id=1ZzOPGNMTfuffEn-IeUF9LiHzfzpicJt3&export=download">
@@ -82,8 +95,18 @@ export default function () {
               <label id="label" htmlFor="name" className={styles.formLabel}>
                 Nombre
               </label>
-              <label className={styles.labelInput}>X</label>
-              <label className={`${styles.labelInput} ${styles.labelInfo}`}>
+              <label
+                className={`${styles.labelInput} ${
+                  !error.name && styles.labelOculto
+                }`}
+              >
+                X
+              </label>
+              <label
+                className={`${styles.labelInput} ${styles.labelInfo} ${
+                  !error.name && styles.labelOculto
+                }`}
+              >
                 Coloca un Nombre
               </label>
             </div>
@@ -100,8 +123,18 @@ export default function () {
               <label htmlFor="name" className={styles.formLabel}>
                 Correo
               </label>
-              <label className={styles.labelInput}>X</label>
-              <label className={`${styles.labelInput} ${styles.labelInfo}`}>
+              <label
+                className={`${styles.labelInput} ${
+                  !error.mail && styles.labelOculto
+                }`}
+              >
+                X
+              </label>
+              <label
+                className={`${styles.labelInput} ${styles.labelInfo} ${
+                  !error.mail && styles.labelOculto
+                }`}
+              >
                 Coloca un Mail
               </label>
             </div>
@@ -118,14 +151,22 @@ export default function () {
               <label htmlFor="name" className={styles.formLabel}>
                 Asunto
               </label>
-              <label className={styles.labelInput}>X</label>
-              <label className={`${styles.labelInput} ${styles.labelInfo}`}>
+              <label
+                className={`${styles.labelInput} ${
+                  !error.subject && styles.labelOculto
+                }`}
+              >
+                X
+              </label>
+              <label
+                className={`${styles.labelInput} ${styles.labelInfo} ${
+                  !error.subject && styles.labelOculto
+                }`}
+              >
                 Coloca un Asunto
               </label>
             </div>
-            <button type="submit" className={styles.button59}>
-              Enviar
-            </button>
+            <button className={stylesNavBar.buttonNav}>Enviar</button>
           </form>
         </div>
       </section>
