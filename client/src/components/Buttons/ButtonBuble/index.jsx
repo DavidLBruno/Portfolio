@@ -4,7 +4,7 @@ import "./index.css";
 export default function ({ title, color, backgroundColor }) {
   return (
     <div>
-      <svg class="misvg" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <svg className="misvg" xmlns="http://www.w3.org/2000/svg" version="1.1">
         <defs>
           <filter id="gooey">
             <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
@@ -28,45 +28,45 @@ export default function ({ title, color, backgroundColor }) {
         style={{ color: `${color}`, backgroundColor: `${backgroundColor}` }}
       >
         {title}
-        <span class="bubbles">
+        <span className="bubbles">
           <span
-            class="bubble"
+            className="bubble"
             style={{ backgroundColor: `${backgroundColor}` }}
           ></span>
           <span
-            class="bubble"
+            className="bubble"
             style={{ backgroundColor: `${backgroundColor}` }}
           ></span>
           <span
-            class="bubble"
+            className="bubble"
             style={{ backgroundColor: `${backgroundColor}` }}
           ></span>
           <span
-            class="bubble"
+            className="bubble"
             style={{ backgroundColor: `${backgroundColor}` }}
           ></span>
           <span
-            class="bubble"
+            className="bubble"
             style={{ backgroundColor: `${backgroundColor}` }}
           ></span>
           <span
-            class="bubble"
+            className="bubble"
             style={{ backgroundColor: `${backgroundColor}` }}
           ></span>
           <span
-            class="bubble"
+            className="bubble"
             style={{ backgroundColor: `${backgroundColor}` }}
           ></span>
           <span
-            class="bubble"
+            className="bubble"
             style={{ backgroundColor: `${backgroundColor}` }}
           ></span>
           <span
-            class="bubble"
+            className="bubble"
             style={{ backgroundColor: `${backgroundColor}` }}
           ></span>
           <span
-            class="bubble"
+            className="bubble"
             style={{ backgroundColor: `${backgroundColor}` }}
           ></span>
         </span>

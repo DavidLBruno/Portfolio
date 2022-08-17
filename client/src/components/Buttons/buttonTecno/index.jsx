@@ -3,10 +3,10 @@ import "./index.css";
 
 export default function ({ name, icon }) {
   return (
-    <ul class="wrapper">
-      <li class={`icon ${name.replace(".", "")}`}>
-        <span class="tooltip">{name}</span>
-        <span class="icono">{icon}</span>
+    <ul className="wrapper">
+      <li className={`icon ${name.replace(".", "")}`}>
+        <span className="tooltip">{name}</span>
+        <span className="icono">{icon}</span>
       </li>
     </ul>
   );

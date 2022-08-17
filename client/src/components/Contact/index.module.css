@@ -5,3 +5,169 @@
     align-items: center;
     height: 31rem;
 }
+
+.formContact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.6s;
+    background-color: #111111bd;
+    pointer-events: none;
+}
+
+.formContact1{
+    transition: 1s;
+    transition: opacity 0.6s;
+    pointer-events: unset;
+    opacity: 1;
+}
+
+.bodyForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 50%;
+    min-height: 80vh;
+    border: 1px solid var(--verde);
+    border-radius: 1rem;
+    background-color: var(--azul);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.textarea{
+    min-height: 50vh;
+}
+
+/* CSS */
+.button59 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-size: 16px;
+  font-weight: 600;
+  height: 5vh;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 5vh;
+  border-radius: 1rem;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: 10vh var(--verde);
+}
+
+.button59:focus {
+  color: #171e29;
+}
+
+.button59:hover {
+  border-color: var(--azul);
+  color: var(--azul);
+  fill: var(--azul);
+}
+
+.button59:active {
+    border-color: var(--azul);
+    color: var(--azul);
+    fill: var(--azul);
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}
+
+/* Input */
+.formGroup {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+  }
+  
+  .formField {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .formField::placeholder {
+    color: transparent;
+  }
+  .formField:placeholder-shown ~ .formLabel {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .formLabel {
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+  }
+  
+  .formField:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+  }
+  .formField:focus ~ .formLabel {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .formField:required, .formField:invalid {
+    box-shadow: none;
+  }
+
+  .labelInput{
+    position: absolute;
+    pointer-events: none;
+    color: red;
+    right: 0.5rem;
+    top: 1.5rem;
+  }
