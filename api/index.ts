@@ -1,6 +1,5 @@
 import app from './src/app';
-import * as dotenv from 'dotenv';
-dotenv.config();
+require('dotenv').config();
 
 const { conn } = require('./src/db')
 

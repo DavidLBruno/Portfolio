@@ -1,6 +1,11 @@
-export default sendMail = async () => {
+import axios from "axios";
+
+let { REACT_APP_URL } = process.env;
+
+export const sendMail = async (body) => {
   try {
-    const response = await axios.get();
+    const response = await axios.post(REACT_APP_URL, body);
+    return response;
   } catch (error) {
     console.log(error);
   }

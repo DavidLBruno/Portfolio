@@ -18,7 +18,7 @@ transporter.verify().then(() => {
     console.log("Ready for send emails")
 }, () => {
     console.log("Don't ready for send emails")
-})
+});
 
 const recibirMail = async (req : Request, res : Response) => {
     try{

@@ -3,6 +3,7 @@ import ButtonBuble from "../Buttons/ButtonBuble";
 import styles from "./index.module.css";
 import stylesNavBar from "../NavBar/index.module.css";
 import { validate } from "./checkError";
+import { sendMail } from "../../actions/index";
 
 export default function () {
   const [form, setForm] = useState(false);
@@ -45,16 +46,15 @@ export default function () {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!error.name && !error.mail && !error.subject) {
+      sendMail(input);
       setInput({
         name: "",
         mail: "",
         subject: "",
       });
       setForm(!form);
-      console.log("todoOk");
     }
   };
-  console.log(error);
   return (
     <div className={styles.bodyContact}>
       <a href="https://drive.google.com/uc?id=1ZzOPGNMTfuffEn-IeUF9LiHzfzpicJt3&export=download">
