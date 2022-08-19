@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./index.module.css";
 import ReactPlayer from "react-player/youtube";
 
@@ -11,8 +11,8 @@ export default function () {
             url="https://www.youtube.com/watch?v=5mPP9Np-9Do"
             controls={true}
             muted={true}
-            width={400}
-            height={200}
+            width={window.innerWidth > 768 ? 400 : 200}
+            height={window.innerWidth > 768 ? 200 : 100}
           />
           <h1>Proyecto Individual Henry</h1>
         </div>
@@ -45,8 +45,8 @@ export default function () {
             url="https://www.youtube.com/watch?v=Tk4OqBk4xu8"
             controls={true}
             muted={true}
-            width={400}
-            height={200}
+            width={window.innerWidth > 768 ? 400 : 200}
+            height={window.innerWidth > 768 ? 200 : 100}
           />
           <h1>Proyecto Final Henry</h1>
         </div>

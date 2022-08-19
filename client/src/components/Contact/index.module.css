@@ -76,11 +76,7 @@
   color: var(--verde);
 }
 
-@media (min-width: 768px) {
-  .button-59 {
-    min-width: 170px;
-  }
-}
+
 
 /* Input */
 .formGroup {
@@ -155,4 +151,14 @@
 
   .labelOculto{
     display: none;
+  }
+
+  @media (max-width: 768px) {
+    .button-59 {
+      min-width: 170px;
+    }
+    .bodyContact{
+      display: flex;
+      flex-direction: column;
+    }
   }

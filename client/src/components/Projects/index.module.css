@@ -95,3 +95,16 @@
 .bn30:hover .text {
     background-image: linear-gradient(-45deg, var(--verde), var(--blanco));
 }
+
+@media (max-width: 600px) {
+    .bodyProjects{
+        align-items: center;
+        flex-direction: column;
+    }
+    .repo{
+        width: 40vh;
+    }
+    .repo:hover{
+        height: 100vh;
+    }
+}
