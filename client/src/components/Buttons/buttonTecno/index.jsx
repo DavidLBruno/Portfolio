@@ -1,13 +1,13 @@
 import React from "react";
 import "./index.css";
 
-export default function ({ name, icon }) {
+export default function ({ name, icon, link }) {
   return (
-    <ul className="wrapper">
-      <li className={`icon ${name.replace(".", "")}`}>
+    <a href={link} target="_blank" className="wrapper">
+      <div className={`icon ${name.replace(".", "")}`}>
         <span className="tooltip">{name}</span>
         <span className="icono">{icon}</span>
-      </li>
-    </ul>
+      </div>
+    </a>
   );
 }

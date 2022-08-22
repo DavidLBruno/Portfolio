@@ -44,59 +44,76 @@ export default function () {
 
       <h1>Tecnologias</h1>
       <div className={styles.tecnologias}>
-        <a
-          href="https://developer.mozilla.org/es/docs/Web/JavaScript"
-          target="_blank"
-        >
-          <ButtonTecno name={"JavaScript"} icon={<DiJavascript1 />} />
-        </a>
-        <a href="https://www.typescriptlang.org/" target="_blank">
-          <ButtonTecno
-            href="https://www.typescriptlang.org/"
-            target="_blank"
-            name={"TypeScript"}
-            icon={<SiTypescript />}
-          />
-        </a>
-        <a href="https://nodejs.org" target="_blank">
-          <ButtonTecno name={"Node.Js"} icon={<GrNode />} />
-        </a>
-        <a href="https://es.reactjs.org" target="_blank">
-          <ButtonTecno name={"React.Js"} icon={<GrReactjs />} />
-        </a>
-        <a href="https://redux.js.org" target="_blank">
-          <ButtonTecno name={"Redux"} icon={<SiRedux />} />
-        </a>
-        <a href="https://expressjs.com" target="_blank">
-          <ButtonTecno name={"Express.Js"} icon={<SiExpress />} />
-        </a>
-        <a href="https://www.postgresql.org" target="_blank">
-          <ButtonTecno name={"PostgreSQL"} icon={<SiPostgresql />} />
-        </a>
-        <a href="https://sequelize.org" target="_blank">
-          <ButtonTecno name={"Sequelize"} icon={<SiSequelize />} />
-        </a>
-        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
-          <ButtonTecno name={"CSS"} icon={<SiCss3 />} />
-        </a>
-        <a href="https://sass-lang.com/" target="_blank">
-          <ButtonTecno name={"Sass"} icon={<SiSass />} />
-        </a>
-        <a href="https://github.com/about" target="_blank">
-          <ButtonTecno name={"GitHub"} icon={<SiGithub />} />
-        </a>
-        <a href="https://www.heroku.com/what" target="_blank">
-          <ButtonTecno name={"Heroku"} icon={<SiHeroku />} />
-        </a>
-        <a href="https://vercel.com/home" target="_blank">
-          <ButtonTecno name={"Vercel"} icon={<SiVercel />} />
-        </a>
-        <a
-          href="https://www.postman.com/product/what-is-postman"
-          target="_blank"
-        >
-          <ButtonTecno name={"Postman"} icon={<SiPostman />} />
-        </a>
+        <ButtonTecno
+          name={"JavaScript"}
+          icon={<DiJavascript1 />}
+          link={"https://developer.mozilla.org/es/docs/Web/JavaScript"}
+        />
+        <ButtonTecno
+          name={"TypeScript"}
+          icon={<SiTypescript />}
+          link={"https://www.typescriptlang.org/"}
+        />
+        <ButtonTecno
+          name={"Node.Js"}
+          icon={<GrNode />}
+          link={"https://nodejs.org"}
+        />
+        <ButtonTecno
+          name={"React.Js"}
+          icon={<GrReactjs />}
+          link={"https://es.reactjs.org"}
+        />
+        <ButtonTecno
+          name={"Redux"}
+          icon={<SiRedux />}
+          link={"https://redux.js.org"}
+        />
+        <ButtonTecno
+          name={"Express.Js"}
+          icon={<SiExpress />}
+          link={"https://expressjs.com"}
+        />
+        <ButtonTecno
+          name={"PostgreSQL"}
+          icon={<SiPostgresql />}
+          link={"https://www.postgresql.org"}
+        />
+        <ButtonTecno
+          name={"Sequelize"}
+          icon={<SiSequelize />}
+          link={"https://sequelize.org"}
+        />
+        <ButtonTecno
+          name={"CSS"}
+          icon={<SiCss3 />}
+          link={"https://developer.mozilla.org/es/docs/Web/CSS"}
+        />
+        <ButtonTecno
+          name={"Sass"}
+          icon={<SiSass />}
+          link={"https://sass-lang.com/"}
+        />
+        <ButtonTecno
+          name={"GitHub"}
+          icon={<SiGithub />}
+          link={"https://github.com/about"}
+        />
+        <ButtonTecno
+          name={"Heroku"}
+          icon={<SiHeroku />}
+          link={"https://www.heroku.com/what"}
+        />
+        <ButtonTecno
+          name={"Vercel"}
+          icon={<SiVercel />}
+          link={"https://vercel.com/home"}
+        />
+        <ButtonTecno
+          name={"Postman"}
+          icon={<SiPostman />}
+          link={"https://www.postman.com/product/what-is-postman"}
+        />
       </div>
     </div>
   );
