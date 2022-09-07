@@ -57,7 +57,7 @@ export default function () {
   };
   return (
     <div className={styles.bodyContact}>
-      <a href="https://drive.google.com/uc?id=1ZzOPGNMTfuffEn-IeUF9LiHzfzpicJt3&export=download">
+      <a href="https://drive.google.com/uc?id=1I_G_SEwLahIvkUe6CcK0LoYYceUUX3hX&export=download">
         <ButtonBuble
           color={"var(--negro)"}
           backgroundColor={"var(--verde)"}
